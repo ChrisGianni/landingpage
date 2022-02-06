@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    font-size: 100%;
+    background: #fff url(https://www.vivo.com.br/content/dam/vivo-sites/vivo-com-br/homepage/imagens/destaques/disney-plus-perfis-desk-1920x832.jpg) center center/cover no-repeat;
+  }
+  
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+  }
+  
+  .cabecalho-imagem {
+    height: 72px;
+  }
+  
+  .cabecalho-menu {
+    display: flex;
+    gap: 350px;
+  }
+  
+  .cabecalho-menu-item {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px
+  }
+  
+  .conteudo {
+    margin-bottom: 48px;
+  }
+  
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .conteudo-principal-escrito-titulo {
+   font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #01364b;
+  }
+  
+  .conteudo-principal-escrito-subtitulo {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+  }
+  
+  .conteudo-principal-escrito-botao {
+    background-color: #000000;
+    animation: myAnim 2s ease 0s infinite normal forwards;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  
+  .conteudo-principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+  }
+  
+  .conteudo-principal-imagem {
+    height: 400px;
+    filter: drop-shadow(28px 2px 3px #000);
+  }
+  
+  .conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  
+  .conteudo-secundario-titulo {
+    border-top: 0.4px solid #ffffff;
+    padding-top: 48px;
+   font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  
+  .conteudo-secundario-paragrafo {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .rodape {
+      padding: 32px;
+      border-top: 0.4px solid #FFF2E7;
+  }
+  
+  .rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @keyframes myAnim {
+    0% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+      transform-origin: center center;
+    }
+  
+    10% {
+      animation-timing-function: ease-in;
+      transform: scale(0.91);
+    }
+  
+    17% {
+      animation-timing-function: ease-out;
+      transform: scale(0.98);
+    }
+  
+    33% {
+      animation-timing-function: ease-in;
+      transform: scale(0.87);
+    }
+  
+    45% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+    }
+  }
+
+  a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;  
+  }
+  
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
