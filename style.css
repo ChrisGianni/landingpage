@@ -79,6 +79,7 @@
     font-weight: 400;
     font-size: 22px;
     color: #ffffff;
+    cursor: pointer;
   }
   
   .conteudo-principal-escrito-botao:hover {
